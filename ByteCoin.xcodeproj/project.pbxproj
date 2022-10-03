@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5435780628EB36E00035EC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F74B9828EB336000D3BC4E /* Main.storyboard */; };
+		5435780828EB39750035EC47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435780728EB39750035EC47 /* ViewController.swift */; };
+		5435780A28EB4E340035EC47 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435780928EB4E340035EC47 /* CoinModel.swift */; };
+		5435780C28EB4E430035EC47 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5435780B28EB4E430035EC47 /* CoinData.swift */; };
 		54F74B9328EB336000D3BC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F74B9228EB336000D3BC4E /* AppDelegate.swift */; };
 		54F74B9528EB336000D3BC4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F74B9428EB336000D3BC4E /* SceneDelegate.swift */; };
-		54F74B9728EB336000D3BC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F74B9628EB336000D3BC4E /* ViewController.swift */; };
-		54F74B9A28EB336000D3BC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F74B9828EB336000D3BC4E /* Main.storyboard */; };
 		54F74B9C28EB336100D3BC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F74B9B28EB336100D3BC4E /* Assets.xcassets */; };
 		54F74B9F28EB336100D3BC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F74B9D28EB336100D3BC4E /* LaunchScreen.storyboard */; };
+		54F74BA928EB347500D3BC4E /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F74BA828EB347500D3BC4E /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5435780728EB39750035EC47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5435780928EB4E340035EC47 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		5435780B28EB4E430035EC47 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		54F74B8F28EB336000D3BC4E /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F74B9228EB336000D3BC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54F74B9428EB336000D3BC4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54F74B9628EB336000D3BC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54F74B9928EB336000D3BC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54F74B9B28EB336100D3BC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F74B9E28EB336100D3BC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54F74BA028EB336100D3BC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F74BA828EB347500D3BC4E /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		54F74B9128EB336000D3BC4E /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				54F74BAB28EB34E400D3BC4E /* Controller */,
+				54F74BA728EB341300D3BC4E /* Model */,
+				54F74BA628EB340800D3BC4E /* View */,
 				54F74B9228EB336000D3BC4E /* AppDelegate.swift */,
 				54F74B9428EB336000D3BC4E /* SceneDelegate.swift */,
-				54F74B9628EB336000D3BC4E /* ViewController.swift */,
-				54F74B9828EB336000D3BC4E /* Main.storyboard */,
 				54F74B9B28EB336100D3BC4E /* Assets.xcassets */,
 				54F74B9D28EB336100D3BC4E /* LaunchScreen.storyboard */,
 				54F74BA028EB336100D3BC4E /* Info.plist */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		54F74BA628EB340800D3BC4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54F74B9828EB336000D3BC4E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54F74BA728EB341300D3BC4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54F74BA828EB347500D3BC4E /* CoinManager.swift */,
+				5435780928EB4E340035EC47 /* CoinModel.swift */,
+				5435780B28EB4E430035EC47 /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54F74BAB28EB34E400D3BC4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5435780728EB39750035EC47 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5435780628EB36E00035EC47 /* Main.storyboard in Resources */,
 				54F74B9F28EB336100D3BC4E /* LaunchScreen.storyboard in Resources */,
 				54F74B9C28EB336100D3BC4E /* Assets.xcassets in Resources */,
-				54F74B9A28EB336000D3BC4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F74B9728EB336000D3BC4E /* ViewController.swift in Sources */,
+				5435780C28EB4E430035EC47 /* CoinData.swift in Sources */,
+				5435780A28EB4E340035EC47 /* CoinModel.swift in Sources */,
+				54F74BA928EB347500D3BC4E /* CoinManager.swift in Sources */,
 				54F74B9328EB336000D3BC4E /* AppDelegate.swift in Sources */,
+				5435780828EB39750035EC47 /* ViewController.swift in Sources */,
 				54F74B9528EB336000D3BC4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
